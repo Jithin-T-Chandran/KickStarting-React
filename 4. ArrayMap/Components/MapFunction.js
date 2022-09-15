@@ -1,4 +1,5 @@
 import React from "react";
+import ListingComponent from "./ListingComponent";
 const DEMO_ARRAY = [
   {
     userId: 1,
@@ -243,15 +244,11 @@ const DEMO_ARRAY = [
   },
 ];
 function MapFunction() {
-    const arr = DEMO_ARRAY.map((item,key) =>{
-        return(
-            <>
-            <h1>{item.title}</h1>
-            <p>{item.id}</p>
-            </>
-        )
+    const arr = DEMO_ARRAY.map((item) =>{
+        return <ListingComponent key={item.id} title={item.title} id={item.id}/>
     })
   return <div>{arr}</div>;
 }
 
 export default MapFunction;
+
