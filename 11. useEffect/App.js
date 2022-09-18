@@ -1,11 +1,13 @@
 import "./App.css";
-import HooksComponent from "./Components/HooksComponent";
+import ClassCounter from './Components/ClassCounter';
+import HooksCounter from './Components/HooksCounter';
 
 
 function App() {
   return (
     <div className="App">
-      <HooksComponent/>
+      <ClassCounter/>
+      <HooksCounter/>
     </div>
   );
 }
